@@ -13,12 +13,12 @@ servo.write(90);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  //main code is this
 light1=analogRead(A1);
 light2=analogRead(A0);
-Serial.println(light1);
-Serial.println(light2);
 
+Serial.println(light2);
+Serial.println(light1);
 
 int diff1=abs(light1-light2);
 int diff2=abs(light2-light1);
